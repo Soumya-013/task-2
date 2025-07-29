@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.5;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.site-header {
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #0077cc;
+    /* blue accent */
+}
+
+.main-nav .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #005fa3;
+
+}
+
+.hero-section {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: #e6f0ff;
+
+}
+
+.hero-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+    color: #003366;
+
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.team-section {
+    padding: 3rem 0 4rem;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #003366;
+
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.team-member {
+    border: 1px solid #cce0ff;
+
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 3px 4px rgba(0, 102, 204, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0, 102, 204, 0.2);
+}
+
+.member-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.member-name {
+    font-size: 1.2rem;
+    color: #0077cc;
+
+    margin-bottom: 0.3rem;
+}
+
+.member-role {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+.member-desc {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.culture-section {
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.culture-section h2 {
+    text-align: center;
+    margin-bottom: 1.3rem;
+    font-size: 1.8rem;
+    color: #003366;
+
+}
+
+.culture-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 1.05rem;
+    color: #444;
+}
+
+.culture-section li {
+    margin-bottom: 0.7rem;
+}
+
+.site-footer {
+    border-top: 1px solid #eee;
+    padding: 1.5rem 0;
+    background: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.site-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.social-links a {
+    margin: 0 0.6rem;
+    font-size: 1.3rem;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0077cc;
+
+}
+
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
